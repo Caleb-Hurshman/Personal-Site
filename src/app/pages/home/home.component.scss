@@ -1,0 +1,116 @@
+@use "../../../variables" as global;
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.home-page-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: global.$secondary-color;
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  border-top: 0.35em solid global.$tertiary-color;
+  border-bottom: 0.35em solid global.$tertiary-color;
+
+  p {
+    font-size: 6vmin;
+  }
+}
+
+.highlighted {
+  color: global.$tertiary-color;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 2px 2px 2px 0px lightgray,
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  background: linear-gradient(
+    0deg,
+    global.$primary-color 0%,
+    global.$tertiary-color 100%
+  );
+  line-height: 42px;
+  border: none;
+  padding: 0;
+  color: white;
+}
+
+button .button-text {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+button:before,
+button:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: global.$tertiary-color;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+button:before {
+  height: 0%;
+  width: 2px;
+}
+button:after {
+  width: 0%;
+  height: 2px;
+}
+button:hover {
+  color: global.$tertiary-color;
+  background: transparent;
+}
+button:hover:before {
+  height: 100%;
+}
+button:hover:after {
+  width: 100%;
+}
+button .button-text:before,
+button .button-text:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: global.$tertiary-color;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+button .button-text:before {
+  width: 2px;
+  height: 0%;
+}
+button .button-text:after {
+  height: 2px;
+  width: 0%;
+}
+button .button-text:hover:before {
+  height: 100%;
+}
+button .button-text:hover:after {
+  width: 100%;
+}

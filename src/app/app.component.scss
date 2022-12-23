@@ -1,0 +1,27 @@
+@use "../variables" as global;
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: global.$secondary-color;
+}
+
+.nav-item-list {
+  li {
+    margin-left: 1em;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-out;
+    cursor: pointer;
+  }
+
+  li:hover {
+    background-color: global.$primary-color;
+  }
+}
+
+.title {
+  margin: 0.75em 0.5em;
+  cursor: pointer;
+}
