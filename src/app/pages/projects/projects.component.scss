@@ -1,0 +1,18 @@
+.project-grid-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+.row {
+  width: 90%;
+}
+
+.project-card {
+  margin-top: 1.5em;
+}
+
+mat-card-actions {
+  padding: 16px;
+}

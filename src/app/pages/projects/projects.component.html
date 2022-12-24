@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<div class="project-grid-container">
+  <div class="row justify-content-around">
+    <mat-card
+      *ngFor="let project of projects"
+      class="project-card col-xs-12 col-lg-5"
+    >
+      <mat-card-header>
+        <h4>{{ project.title }}</h4>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ project.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a *ngIf="project.link" [href]="project.link">See More</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

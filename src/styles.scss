@@ -1,8 +1,20 @@
 @use "variables" as global;
 
-/* Importing Bootstrap SCSS file. */
+/* Import Bootstrap SCSS file */
 @import "bootstrap/scss/bootstrap";
+
+/* Import font family */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap");
+
+/* Import Angular Material */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body {
   background-color: global.$primary-color;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
 }
