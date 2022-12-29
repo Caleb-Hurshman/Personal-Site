@@ -1,3 +1,5 @@
+@use "../../../variables" as global;
+
 .project-grid-container {
   display: flex;
   justify-content: center;
@@ -13,6 +15,25 @@
   margin-top: 1.5em;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  background-color: global.$tertiary-color;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-hover-color: var(--bs-white);
+}
+
+.btn:hover {
+  background-color: rgba(global.$tertiary-color, 0.8);
+}
+
 mat-card-actions {
   padding: 16px;
+}
+
+.github-icon {
+  filter: invert(100%); // change icon color from default black to white
+  height: 1em;
+  width: 1em;
+  margin-right: 0.35em;
 }
