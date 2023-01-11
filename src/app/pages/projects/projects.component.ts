@@ -8,20 +8,20 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects: ProjectData[] = [
     {
-      title: 'FreeTime',
-      description:
-        'The FreeTime app allows users to input their free time for the week, form groups with other users, \
-        and computes overlapping free time for a group. Built using JavaScript, HTML, CSS, React Native, a \
-        PostgreSQL database, and Heroku.',
-      link: 'https://github.com/calvin-cs262-fall2020-teamD/freetime-project',
-    },
-    {
       title: '4x4 Tic-Tac-Toe',
       description:
         'Online multiplayer 4x4 tic-tac-toe web app. \
         Full authentication and authorization for users, along with profile customization \
         and stat tracking. Built using TypeScript, HTML, SCSS, Angular, and Google Firestore/Firebase.',
       link: 'https://github.com/cs336-tic-tac-toe/tic-tac-toe',
+    },
+    {
+      title: 'FreeTime',
+      description:
+        'The FreeTime app allows users to input their free time for the week, form groups with other users, \
+        and computes overlapping free time for a group. Built using JavaScript, HTML, CSS, React Native, a \
+        PostgreSQL database, and Heroku.',
+      link: 'https://github.com/calvin-cs262-fall2020-teamD/freetime-project',
     },
     {
       title: 'Reliable Calvin Message Protocol',

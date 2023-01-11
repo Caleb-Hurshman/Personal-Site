@@ -1,5 +1,143 @@
-<div class="links">
-  <a href="https://github.com/Caleb-Hurshman">Github</a>
-  <br />
-  <a href="https://www.linkedin.com/in/caleb-hurshman-6446b51b8/">LinkedIn</a>
+<div class="about-page">
+  <h3 class="page-title">About Me</h3>
+  <ngb-accordion>
+    <ngb-panel title="Bio">
+      <ng-template ngbPanelContent>
+        <section class="card">
+          <div class="card-body">
+            <p>
+              Hello, my name is Caleb Hurshman! I am a junior software developer
+              originally from Ypsilanti, Michigan. I got started programming by
+              doing free, online coding courses when I was in middle school.
+              Through middle and high school I started attending ID Tech Camps
+              at the University of Michigan, which were week-long programming
+              crash courses. My senior year, I finally took a formal course,
+              after which I decided to major in computer science. After three
+              and a half years at Calvin University I graduated with a BS in
+              Computer Science. For a list of relevant courses, visit the
+              <strong>Education</strong> tab on this page. When I'm not coding I
+              enjoy spending time with friends and family, weightlifting, rock
+              climbing, gaming, cooking, and enjoying nature.
+            </p>
+            <p>
+              In my time as a student I worked for the Computer Science
+              department as a teacher's assisstant, lab assistant, and grader
+              for multiple semesters. Over the summer of 2022, I interned at
+              Maestro in Kalamazoo, Michigan. For a seventeen week period I was
+              fully immersed in an agile team environment and was given the
+              opportunity to make meaningful contributions both to the core
+              product and to the team itself. I worked full stack developing
+              software that was used internally, as well as a full-fledged event
+              calendar feature that was deployed for customer use.
+            </p>
+            <p>
+              I graduated in December 2022, and I am currently looking for a
+              full-time role as a software engineer. My ideal company is
+              product-driven, with an emphasis on culture, work-life balance,
+              learning, and growth opportunities. I specialize in
+              Typescript/JavaScript, Python, HTML, SCSS/CSS, and Angular, but I
+              have exposure to many languages and technologies. I've worked in
+              languages like Java, C#, C/C++, Ruby, Swift, Clojure, and Ada.
+              Alongside Angular I've worked with frameworks like React Native
+              and .NET. I have experience both with relational databases in
+              PostgreSQL/ElephantSQL and in NoSQL database systems like Google
+              Firestore. I bring a passion for learning and growth that drives
+              me as a professional and I take pride in my work. If any of my
+              experiences or values resonate with you, feel free to reach out to
+              me on LinkedIn or by email. Thanks!
+            </p>
+          </div>
+        </section>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel title="Education">
+      <ng-template ngbPanelContent>
+        <section class="card">
+          <div class="card-body">
+            <h5 class="card-title">Calvin University</h5>
+            <div>Bachelor of Science in Computer Science</div>
+            <div>Graduated December 2022</div>
+            <div>GPA of 3.87 on a scale of 4.0</div>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-body">
+            <h5 class="card-title">Relevant Coursework</h5>
+            <div class="course-list">
+              <ul>
+                <li>
+                  Software Engineering
+                  <span class="badge badge-light">Fall 2020</span>
+                </li>
+                <li>
+                  Advanced Data Structures and Algorithms<span
+                    class="badge badge-light"
+                    >Fall 2020</span
+                  >
+                </li>
+                <li>
+                  Programming Language Concepts<span class="badge badge-light"
+                    >Spring 2021</span
+                  >
+                </li>
+                <li>
+                  Operating Systems & Networking<span class="badge badge-light"
+                    >Spring 2021</span
+                  >
+                </li>
+                <li>
+                  Advanced Networking<span class="badge badge-light"
+                    >Fall 2021</span
+                  >
+                </li>
+                <li>
+                  Artificial Intelligence<span class="badge badge-light"
+                    >Spring 2022</span
+                  >
+                </li>
+                <li>
+                  Computer Security<span class="badge badge-light"
+                    >Spring 2022</span
+                  >
+                </li>
+                <li>
+                  Web Development<span class="badge badge-light"
+                    >Fall 2022</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </ng-template>
+    </ngb-panel>
+
+    <ngb-panel title="Work Experience">
+      <ng-template ngbPanelContent>
+        <section
+          *ngFor="let exp of workExperiences"
+          class="card work-experience-card"
+        >
+          <div class="card-body word-exp-card">
+            <div class="exp-header">
+              <h5 class="card-title">{{ exp.title }}</h5>
+              <span class="badge badge-light">{{ exp.dateRange }}</span>
+            </div>
+            {{ exp.location }} <br />
+            {{ exp.employer }} <br />
+            <p *ngIf="exp.supervisor">Supervisor: {{ exp.supervisor }}</p>
+            <ul>
+              <li *ngFor="let desc of exp.description">{{ desc }}</li>
+            </ul>
+          </div>
+        </section>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+
+  <div class="links">
+    <a href="https://github.com/Caleb-Hurshman">GitHub</a>
+    <br />
+    <a href="https://www.linkedin.com/in/caleb-hurshman-6446b51b8/">LinkedIn</a>
+  </div>
 </div>
