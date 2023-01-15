@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "caleb-hurshman-site": {
+      "hosting": {
+        "personal-site": [
+          "calebhurshman"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "caleb-hurshman-site"
+  }
+}

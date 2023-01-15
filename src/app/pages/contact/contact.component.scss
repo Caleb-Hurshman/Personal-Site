@@ -1,0 +1,26 @@
+@use "../../../scss/variables" as global;
+
+.contact-page {
+  // top | horiz | bottom
+  margin: 1em 1em 0;
+  background-color: white;
+}
+
+.icon {
+  filter: invert(100%); // change icon color from default black to white
+  height: 1em;
+  width: 1em;
+  margin-right: 0.35em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  background-color: global.$tertiary-color;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-hover-color: var(--bs-white);
+}
+
+.btn:hover {
+  background-color: rgba(global.$tertiary-color, 0.8);
+}

@@ -1,9 +1,7 @@
 @use "../../../scss/variables" as global;
 
 .about-page {
-  margin-left: 1em;
-  margin-top: 1em;
-  margin-right: 1em;
+  margin: 1em 1em 0;
 }
 
 .page-title {
@@ -30,7 +28,7 @@ section:nth-child(1n + 2) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.5em;
 
   .card-title {
     margin-bottom: 0;
@@ -38,5 +36,11 @@ section:nth-child(1n + 2) {
 
   .badge {
     font-size: 1em;
+  }
+
+  @media (max-width: 500px) {
+    .badge {
+      font-size: 3vw;
+    }
   }
 }

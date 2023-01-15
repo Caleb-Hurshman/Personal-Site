@@ -21,10 +21,10 @@
             </p>
             <p>
               In my time as a student I worked for the Computer Science
-              department as a teacher's assisstant, lab assistant, and grader
-              for multiple semesters. Over the summer of 2022, I interned at
-              Maestro in Kalamazoo, Michigan. For a seventeen week period I was
-              fully immersed in an agile team environment and was given the
+              department as a teacher's assisstant, lab monitor, and grader for
+              multiple semesters. Over the summer of 2022, I interned at Maestro
+              in Kalamazoo, Michigan. For a seventeen week period I was fully
+              immersed in an agile team environment and was given the
               opportunity to make meaningful contributions both to the core
               product and to the team itself. I worked full stack developing
               software that was used internally, as well as a full-fledged event
@@ -35,7 +35,7 @@
               full-time role as a software engineer. My ideal company is
               product-driven, with an emphasis on culture, work-life balance,
               learning, and growth opportunities. I specialize in
-              Typescript/JavaScript, Python, HTML, SCSS/CSS, and Angular, but I
+              TypeScript/JavaScript, Python, HTML, SCSS/CSS, and Angular, but I
               have exposure to many languages and technologies. I've worked in
               languages like Java, C#, C/C++, Ruby, Swift, Clojure, and Ada.
               Alongside Angular I've worked with frameworks like React Native
@@ -123,9 +123,9 @@
               <h5 class="card-title">{{ exp.title }}</h5>
               <span class="badge badge-light">{{ exp.dateRange }}</span>
             </div>
-            {{ exp.location }} <br />
             {{ exp.employer }} <br />
-            <p *ngIf="exp.supervisor">Supervisor: {{ exp.supervisor }}</p>
+            <i>{{ exp.location }}</i>
+            <div *ngIf="exp.supervisor">Supervisor: {{ exp.supervisor }}</div>
             <ul>
               <li *ngFor="let desc of exp.description">{{ desc }}</li>
             </ul>
@@ -134,10 +134,4 @@
       </ng-template>
     </ngb-panel>
   </ngb-accordion>
-
-  <div class="links">
-    <a href="https://github.com/Caleb-Hurshman">GitHub</a>
-    <br />
-    <a href="https://www.linkedin.com/in/caleb-hurshman-6446b51b8/">LinkedIn</a>
-  </div>
 </div>
