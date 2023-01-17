@@ -1,19 +1,30 @@
 <div class="contact-page">
-  <div class="links">
-    <label for="github-btn">Check out some of my work</label>
-    <button id="github-btn" class="btn" (click)="onGitHubButtonClick()">
-      <img class="bi icon" src="../../../assets/img/github.svg" alt="GitHub" />
-      GitHub
-    </button>
-    <br />
-    <label for="github-btn">Connect with me on LinkedIn</label>
-    <button class="btn" (click)="onLinkedInButtonClick()">
-      <img
-        class="bi icon"
-        src="../../../assets/img/linkedin.svg"
-        alt="LinkedIn"
-      />
-      LinkedIn
-    </button>
+  <div class="contact-page-content">
+    <div class="contact-item">
+      <label for="github-btn">Check out some of my work</label>
+      <button id="github-btn" class="btn" (click)="onGitHubButtonClick()">
+        <img
+          class="bi icon"
+          src="../../../assets/img/github.svg"
+          alt="GitHub"
+        />
+        GitHub
+      </button>
+    </div>
+    <div class="contact-item">
+      <label for="github-btn">Connect with me on LinkedIn</label>
+      <button class="btn" (click)="onLinkedInButtonClick()">
+        <img
+          class="bi icon"
+          src="../../../assets/img/linkedin.svg"
+          alt="LinkedIn"
+        />
+        LinkedIn
+      </button>
+    </div>
   </div>
+  <p>
+    If you would like to get in touch with me by email, you can reach me at
+    caleb@hurshman.com
+  </p>
 </div>
