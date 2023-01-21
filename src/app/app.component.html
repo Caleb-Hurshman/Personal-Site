@@ -1,9 +1,28 @@
 <nav class="header">
   <h3 class="title" routerLink="home">Caleb Hurshman</h3>
-  <ul ngbNav class="nav-item-list">
+  <ul ngbNav class="nav-list">
     <li routerLink="projects">Projects</li>
     <li routerLink="about">About</li>
     <li routerLink="contact">Contact</li>
   </ul>
+  <button
+    class="btn mobile-menu-button"
+    (click)="onMenuButtonClick(mobileNavMenu)"
+  >
+    <img src="../assets/img/list.svg" alt="menu" class="bi" />
+  </button>
 </nav>
 <router-outlet></router-outlet>
+
+<ng-template #mobileNavMenu let-menu>
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" (click)="menu.dismiss()"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="mobile-nav-list">
+      <li routerLink="projects" (click)="menu.dismiss()">Projects</li>
+      <li routerLink="about" (click)="menu.dismiss()">About</li>
+      <li routerLink="contact" (click)="menu.dismiss()">Contact</li>
+    </ul>
+  </div>
+</ng-template>

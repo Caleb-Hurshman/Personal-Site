@@ -1,26 +1,29 @@
-<div class="project-grid-container">
-  <div class="row justify-content-around">
-    <div
-      *ngFor="let project of projects"
-      class="card project-card col-xs-12 col-lg-5"
-    >
-      <div class="card-body">
-        <h4 class="card-title">
-          <i>{{ project.title }}</i>
-        </h4>
-        <p>{{ project.description }}</p>
-        <button
-          class="btn"
-          *ngIf="project.link"
-          (click)="onGitHubLinkClick(project.link)"
-        >
-          <img
-            class="bi github-icon"
-            src="../../../assets/img/github.svg"
-            alt="GitHub"
-          />
-          GitHub
-        </button>
+<div class="projects-page">
+  <h3 class="page-title">My Projects</h3>
+  <div class="project-grid-container">
+    <div class="row justify-content-around">
+      <div
+        *ngFor="let project of projects"
+        class="card project-card col-xs-12 col-lg-5"
+      >
+        <div class="card-body">
+          <h4 class="card-title">
+            <i>{{ project.title }}</i>
+          </h4>
+          <p>{{ project.description }}</p>
+          <button
+            class="btn"
+            *ngIf="project.link"
+            (click)="onGitHubLinkClick(project.link)"
+          >
+            <img
+              class="bi github-icon"
+              src="../../../assets/img/github.svg"
+              alt="GitHub"
+            />
+            GitHub
+          </button>
+        </div>
       </div>
     </div>
   </div>

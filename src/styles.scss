@@ -7,7 +7,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap");
 
 body {
-  background-color: global.$primary-color;
+  background-image: linear-gradient(
+    0deg,
+    global.$tertiary-color,
+    global.$secondary-color 90%
+  );
   font-family: "Hanken Grotesk", sans-serif;
 }
 

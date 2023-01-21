@@ -3,10 +3,9 @@
 .header {
   display: flex;
   align-items: center;
-  background-color: global.$secondary-color;
 }
 
-.nav-item-list {
+.nav-list {
   li {
     margin-left: 1em;
     padding: 5px;
@@ -25,4 +24,33 @@
 .title {
   margin: 0.75em 0.5em;
   cursor: pointer;
+}
+
+.mobile-menu-button {
+  display: none;
+  position: absolute;
+  right: 0.5em;
+}
+
+@media (max-width: 500px) {
+  .mobile-menu-button {
+    display: inherit;
+  }
+  .nav-list {
+    display: none;
+  }
+}
+
+.mobile-nav-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: x-large;
+
+  li {
+    cursor: pointer;
+  }
 }

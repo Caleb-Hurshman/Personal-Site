@@ -17,11 +17,13 @@
   width: 100%;
   height: 30vh;
   text-align: center;
-  border-top: 0.35em solid global.$tertiary-color;
-  border-bottom: 0.35em solid global.$tertiary-color;
+  // border-top: 0.35em solid global.$tertiary-color;
+  // border-bottom: 0.35em solid global.$tertiary-color;
+  box-shadow: 0em 1em 5px global.$secondary-color,
+    0em -1em 5px global.$secondary-color;
 
   p {
-    font-size: 6vmin;
+    font-size: 3vw;
   }
 }
 
